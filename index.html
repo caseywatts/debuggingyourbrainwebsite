@@ -1,5 +1,15 @@
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176075365-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-176075365-1');
+        </script>
+
         <style>
             body {
                 font-family: 'Open Sans', sans-serif;
@@ -33,23 +43,25 @@
             .buy-book-section {
                 text-align: center;
             }
-            .buy-book-section h3 {
+            h3 {
                 text-align: center;
             }
-            .buy-book-section a {
-                    display: block;
-                    padding: 10px;
-                    margin: 10px;
-                    color: white;
-                    text-decoration: none;
-                    background-color: purple;
-                    border-radius: 6px;
-                    text-align: center;
+            a {
+                display: inline-block;
+                max-width: 200px;
+                padding: 10px;
+                margin: 10px;
+                color: white;
+                text-decoration: none;
+                background-color: purple;
+                border-radius: 6px;
+                text-align: center;
             }
             .book-source-column {
                 max-width: 200px;
                 display: inline-block;
             }
+            .lol {text-align:center;}
         </style>
     </head>
     <body>
@@ -69,13 +81,6 @@
             </div>
         </div>
 
-        <div class="about-author-section section">
-            <h2>About The Author</h2>
-            <p>
-                Casey Watts studied neurobiology at Yale University, and he is a co-author on some neurobiology papers. He has also worked in software development for 10 years. This book brings together these two parts of his background: psychology and software development.  
-            </p>
-        </div>
-
         <div class="buy-book-section section">
             <h2>Where To Buy</h2>
             <div class="book-source-column amazon">
@@ -83,6 +88,18 @@
                 <a href="#">Paper Book</a>
                 <a href="#">Kindle eBook</a>
                 <a href="#">Audiobook</a>    
+            </div>
+        </div>
+
+        <div class="about-author-section section">
+            <h2>About The Author</h2>
+            <p>
+                Casey Watts studied neurobiology at Yale University, and he is a co-author on some neurobiology papers. He has also worked in software development for 10 years. This book brings together these two parts of his background: psychology and software development.  
+            </p>
+            <div class="lol">
+                <h3>Follow Casey</h3>
+                <a href="twitter.com/kyloma">Twitter</a>
+                <a href="#">Facebook Page</a>
             </div>
         </div>
     </body>
