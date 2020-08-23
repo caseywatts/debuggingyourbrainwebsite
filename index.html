@@ -78,7 +78,7 @@
             .flex-container {
                 display: flex;
                 /* flex-basis: auto; */
-                flex-direction: row;
+                /* flex-direction: row; */
                 flex-wrap: wrap;
                 /* flex-grow: 1; */
                 /* flex-flow: column wrap; */
@@ -93,10 +93,17 @@
             .flex-column {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 100%;
+                /* flex-basis: 100%; */
                 flex: 1;
                 margin: 20px;
                 min-width: 300px;
+                display:float;
+            }
+            h3 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 1em;
             }
         </style>
     </head>
@@ -107,11 +114,11 @@
 
         <div class="about-book-section section">
             <h2>About The Book</h2>
-            <div class="flex-container">
-                <p class="flex-column">
+            <div class="">
+                <p class="">
                     The human brain is buggy. Sometimes your mind distorts reality, gets stuck on shortcomings, or spirals out of control. With the right tools, you can patch the software that runs in your mind: catch distortions of reality, transform frustration into insight, and short-circuit downward spirals. Become a better friend, team member, and human.
                 </p>
-                <p class="flex-column">
+                <p class="">
                     The brain is a complex system. Debugging Your Brain is a toolkit to help you understand and optimize yours.
                 </p>
             </div>
