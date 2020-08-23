@@ -11,12 +11,17 @@
         </script>
 
         <style>
-
+            :root {
+                --middle-color: rgb(188, 193, 255);
+                --edge-color: rgba(214,218,255,1);
+                --card-background: #f2f3ff;
+                --button-background: purple;
+            }
 
             body {
                 font-family: 'Open Sans', sans-serif;
                 background: rgb(214,218,255);
-                background: linear-gradient(180deg, rgba(214,218,255,1) 0%, rgba(152,158,218,1) 50%, rgba(214,218,255,1) 100%);
+                background: linear-gradient(180deg, var(--edge-color) 0%, var(--middle-color) 50%, var(--edge-color) 100%);
             }
 
             h1, h2, h3, h4, h5, h6 {
@@ -38,11 +43,14 @@
             }
 
             .section {
-                margin: 30px;
+                margin: auto;
+                margin-top: 30px;
+                margin-bottom: 30px;
                 padding: 40px;
-                background-color: #f2f3ff;
+                background-color: var(--card-background);
                 /* background: rgba(135,142,217,0.9) */
                 border-radius: 15px;
+                max-width: 800px;
             }
             .buy-book-section {
                 text-align: center;
@@ -57,7 +65,7 @@
                 margin: 10px;
                 color: white;
                 text-decoration: none;
-                background-color: purple;
+                background-color: var(--button-background);
                 border-radius: 6px;
                 text-align: center;
             }
