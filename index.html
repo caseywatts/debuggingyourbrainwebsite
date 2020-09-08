@@ -59,11 +59,11 @@
             .title-section {
                 text-align: center;
                 background: black;
-                padding: 2em;
+                padding: 0em;
             }
 
             .title-group {
-                margin: 30px;
+                margin: 0.2em;
                 font-size: 6em;
                 text-align: left;
                 font-family: "Ostrich Sans", sans-serif;
@@ -98,18 +98,29 @@
                 text-align: center;
             }
 
+            .not-header {
+                text-align: center;
+            }
+
             .section {
-                margin: auto;
-                margin-top: 30px;
-                margin-bottom: 30px;
-                padding: 40px;
+                display: inline-block;
+                margin: 3em;
+                padding: 2em;
                 background-color: var(--card-background);
                 /* background: rgba(135,142,217,0.9) */
                 border-radius: 15px;
-                max-width: 800px;
+                min-width: 25rem;
+                max-width: 35rem;
+                box-shadow: 3px 3px 10px var(--brain-background-black);
+            }
+            .about-book-section {
+                text-align: justify;
             }
             .buy-book-section {
                 text-align: center;
+            }
+            .about-author-section {
+                text-align: justify;
             }
             h3 {
                 text-align: center;
@@ -284,38 +295,41 @@
             </div>
         </div>
 
-        <div class="about-book-section section">
-            <h2>About The Book</h2>
-            <div class="" style="column-count:2;">
-                <p class="">
-                    The human brain is buggy. Sometimes your mind distorts reality, gets stuck on shortcomings, or spirals out of control. With the right tools, you can patch the software that runs in your mind: catch distortions of reality, transform frustration into insight, and short-circuit downward spirals. Become a better friend, team member, and human.
-                </p>
-                <p class="">
-                    The brain is a complex system. Debugging Your Brain is a toolkit to help you understand and optimize yours.
-                </p>
+        <div class="not-header">
+            <div class="about-book-section section">
+                <h2>About The Book</h2>
+                <div class="">
+                    <p class="">
+                        The human brain is buggy. Sometimes your mind distorts reality, gets stuck on shortcomings, or spirals out of control. With the right tools, you can patch the software that runs in your mind: catch distortions of reality, transform frustration into insight, and short-circuit downward spirals. Become a better friend, team member, and human.
+                    </p>
+                    <p class="">
+                        The brain is a complex system. Debugging Your Brain is a toolkit to help you understand and optimize yours.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div id="buy" class="buy-book-section section">
-            <h2>Where To Buy</h2>
-            <div class="book-source-column amazon">
-                <h3>Amazon</h3>
-                <a class="button-link" href="#">Paper Book</a>
-                <a class="button-link" href="#">Kindle eBook</a>
-                <a class="button-link" href="#">Audiobook</a>    
+            <div class="about-author-section section">
+                <h2>About The Author</h2>
+                <p>
+                    Casey Watts studied neurobiology at Yale University, and he is a co-author on some neurobiology papers. He has also worked in software development for 10 years. This book brings together these two parts of his background: psychology and software development.  
+                </p>
+                <div class="lol">
+                    <h3>Follow Casey</h3>
+                    <a class="button-link" href="https://twitter.com/kyloma">Twitter</a>
+                    <a class="button-link" href="#">Facebook Page</a>
+                </div>
             </div>
-        </div>
 
-        <div class="about-author-section section">
-            <h2>About The Author</h2>
-            <p>
-                Casey Watts studied neurobiology at Yale University, and he is a co-author on some neurobiology papers. He has also worked in software development for 10 years. This book brings together these two parts of his background: psychology and software development.  
-            </p>
-            <div class="lol">
-                <h3>Follow Casey</h3>
-                <a class="button-link" href="https://twitter.com/kyloma">Twitter</a>
-                <a class="button-link" href="#">Facebook Page</a>
+            <div id="buy" class="buy-book-section section">
+                <h2>Where To Buy</h2>
+                <div class="book-source-column amazon">
+                    <h3>Amazon</h3>
+                    <a class="button-link" href="#">Paper Book</a>
+                    <a class="button-link" href="#">Kindle eBook</a>
+                    <a class="button-link" href="#">Audiobook</a>    
+                </div>
             </div>
+
         </div>
     </body>
 </html>
