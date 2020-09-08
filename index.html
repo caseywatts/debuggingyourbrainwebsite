@@ -76,6 +76,7 @@
             .title {
                 margin: 0;
                 line-height: 0.9em;
+                font-size: 1em;
             }
             .subtitle {
                 font-weight: normal;
@@ -158,6 +159,10 @@
             }
             p {
                 font-size: 1em;
+            }
+            .book-floating-box {
+                display: relative;
+                top: 50px;
             }
         </style>
         <style>
@@ -254,31 +259,34 @@
     </head>
     <body>
         <div class="title-section two-column">
-            <h1 class="title-group flex-column" style="display:inline-block;">
-                <div class="title">Debugging</div>
-                <div class="subtitle">Your Brain</div>
-                <div class="author">Casey Watts</div>
-            </h1>
             <div class="flex-column" style="display:inline-block;">
-                <a
-                class="book-container"
-                href="https://www.debuggingyourbrain.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-                >
-                <div class="book">
-                    <img
-                    alt="Debugging Your Brain by Casey Watts"
-                    src="assets/FrontCover@2x.jpg"
-                    />
-                </div>
-                </a>
+                <h1 class="title-group">
+                    <div class="title">Debugging</div>
+                    <div class="subtitle">Your Brain</div>
+                    <div class="author">Casey Watts</div>
+                </h1>
+                <a class="button-link" href="#buy">Buy Book</a>
+            </div>
+            <div class="flex-column" style="display:inline-block;">
+                    <a
+                    class="book-container"
+                    href="https://www.debuggingyourbrain.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    >
+                    <div class="book">
+                        <img
+                        alt="Debugging Your Brain by Casey Watts"
+                        src="assets/FrontCover@2x.jpg"
+                        />
+                    </div>
+                    </a>
             </div>
         </div>
 
         <div class="about-book-section section">
             <h2>About The Book</h2>
-            <div class="">
+            <div class="" style="column-count:2;">
                 <p class="">
                     The human brain is buggy. Sometimes your mind distorts reality, gets stuck on shortcomings, or spirals out of control. With the right tools, you can patch the software that runs in your mind: catch distortions of reality, transform frustration into insight, and short-circuit downward spirals. Become a better friend, team member, and human.
                 </p>
@@ -288,7 +296,7 @@
             </div>
         </div>
 
-        <div class="buy-book-section section">
+        <div id="buy" class="buy-book-section section">
             <h2>Where To Buy</h2>
             <div class="book-source-column amazon">
                 <h3>Amazon</h3>
