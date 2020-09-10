@@ -100,36 +100,55 @@
 
             .not-header {
                 text-align: center;
-                padding-top: 1rem;
+                /* padding-top: 1rem; */
+                padding: 1rem;
             }
 
             .section {
-                display: inline-block;
-                vertical-align: top;
+                display: block;
+                /* vertical-align: top; */
                 margin: 1.5rem;
+                margin-left: auto;
+                margin-right: auto;
                 padding: 2rem;
                 background-color: var(--card-background);
                 /* background: rgba(135,142,217,0.9) */
                 border-radius: 1rem;
-                min-width: 25rem;
-                max-width: 35rem;
+                /* min-width: 25rem; */
+                max-width: 50rem;
                 box-shadow: 3px 3px 10px var(--brain-background-black);
             }
             .justify-text {
                 text-align: justify;
             }
-            .about-book-section {
-                text-align: justify;
+            .center-text {
+                text-align: center;
             }
             .buy-book-section {
                 text-align: center;
             }
-            .about-author-section {
-                text-align: justify;
-            }
             h3 {
                 text-align: center;
             }
+            a {
+                color: var(--brain-blue);
+            }
+            a:hover {
+                color: var(--brain-purple);
+            }
+
+            a.linky-link {
+                color: var(--brain-blue);
+                border: 1px solid var(--brain-blue);
+                padding: 0.4rem;
+                margin: 0.2rem;
+                border-radius: 0.5rem;
+            }
+            a.linky-link:hover {
+                color: var(--brain-purple);
+                border: 1px solid var(--brain-purple);
+            }
+
             a.button-link {
                 display: inline-block;
                 width: 8rem;
@@ -139,10 +158,14 @@
                 box-shadow: 2px 2px var(--brain-purple);
                 text-decoration: none;
                 background-color: var(--brain-orange);
-                background: radial-gradient(10em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
+                background: radial-gradient(17em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
                 border-radius: 6px;
                 text-align: center;
             }
+            a.button-link:hover {
+                background: radial-gradient(10em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
+            }
+
             .book-source-column {
                 display: inline-block;
             }
@@ -260,6 +283,7 @@
                     <div class="subtitle">Your Brain</div>
                     <div class="author">Casey Watts</div>
                 </h1>
+                <a class="button-link" href="#book-overview">Preview Book</a>
                 <a class="button-link" href="#buy">Buy Book</a>
             </div>
             <div class="column" style="display:inline-block;">
@@ -280,7 +304,7 @@
         </div>
 
         <div class="not-header">
-            <div class="about-book-section section justify-text">
+            <div class="section justify-text">
                 <h2>The Book</h2>
                 <div class="">
                     <p class="">
@@ -295,19 +319,20 @@
                 </div>
             </div>
 
-            <div class="about-author-section section justify-text">
+            <div class="section justify-text">
                 <h2>The Author</h2>
                 <p>
-                    Casey Watts studied neurobiology at Yale University, and he is a co-author on some neurobiology papers. He has also worked in software development for 10 years. This book brings together these two parts of his background: psychology and software development.  
+                    Casey Watts studied neurobiology at Yale University, and he is a co-author on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Watts+and+Schafe">several neurobiology papers</a>. He has also worked in software development for 10 years, including some time at <a href="https://blog.heroku.com/authors/casey-watts">Heroku</a>. This book brings together these two parts of his background: psychology and software development.  
                 </p>
                 <div class="lol">
-                    <h3>Follow Casey</h3>
-                    <a class="button-link" href="https://twitter.com/kyloma">Twitter</a>
-                    <a class="button-link" href="#">Facebook Page</a>
+                    <h3>Contact Casey</h3>
+                    <p>Questions for Casey? Want to share your experiences? Reach out:</p>
+                    <a class="linky-link" href="https://twitter.com/kyloma">Twitter</a>
+                    <a class="linky-link" href="https://twitter.com/kyloma">DC Tech Slack</a>
                 </div>
             </div>
 
-            <div class="section justify-text">
+            <div id="book-overview" class="section justify-text">
                 <h2>Book Overview</h2>
                 <p>Debugging Your Brain brings together two parts of my background: psychology and software development. This book is different from other applied psychology and self-help books in two ways. It concisely covers a wide range of practical techniques backed by psychology research, and it leverages software development metaphors.</p>
                 <p>Debugging Your Brain is written to be read in order, with each chapter building on the last. Each chapter is also written such that you can return to any chapter later as a reference for yourself. Each of the eight chapters covers one major concept:</p>
@@ -323,15 +348,18 @@
                 </ol>
                 <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of them, you can begin to practice and internalize them. Each chapter has activities at the end to help make this easier.</p>
                 <p>The book ends with two sections: "Key Takeaways" which summarizes the high level concepts from each chapter of this book again, and "More Resources" which points you to more ways you can dig into these techniques even deeper using other resources.</p>
+                <div class="center-text">
+                    <a class="button-link" href="#buy">Buy Book</a>
+                </div>
             </div>
 
-            <div id="buy" class="buy-book-section section">
+            <div id="buy" class="section center-text">
                 <h2>Where To Buy</h2>
                 <div class="book-source-column amazon">
                     <h3>Amazon</h3>
-                    <a class="button-link" href="#">Paper Book</a>
-                    <a class="button-link" href="#">Kindle eBook</a>
-                    <a class="button-link" href="#">Audiobook</a>    
+                    <a class="linky-link" href="#">Paper Book</a>
+                    <a class="linky-link" href="#">Kindle eBook</a>
+                    <a class="linky-link" href="#">Audiobook</a>    
                 </div>
             </div>
 
