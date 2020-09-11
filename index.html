@@ -54,6 +54,7 @@
 
             h1, h2, h3, h4, h5, h6 {
                 font-family: 'Ostrich Sans', 'Hind', sans-serif;
+                letter-spacing: 0.1rem;
             }
 
             h2 {
@@ -62,12 +63,29 @@
             h3 {
                 font-size: 1.5em;
             }
+            .header-column {
+                font-size: 1.5em;
+                display: block;
+                text-align: right;
+                font-family: 'Ostrich Sans', 'Hind', sans-serif;
+            }
 
             blockquote {
                 border-left: 0.2rem solid #CCC;
                 padding-left: 1rem;
             }
 
+            table {
+                margin: auto;
+            }
+
+            td {
+                vertical-align: middle;
+                padding: 1rem;
+            }
+            p {
+                line-height: 1.45em;
+            }
             /* header */
 
             .title-section {
@@ -160,6 +178,7 @@
                 padding: 0.4rem;
                 margin: 0.2rem;
                 border-radius: 0.5rem;
+                text-decoration: none;
             }
             a.linky-link:hover {
                 color: var(--brain-purple);
@@ -409,7 +428,6 @@
                     <li><b>Cognitive Restructuring</b> covers the most common unhelpful thought patterns, and how to counter them. This is the core idea of CBT.</li>
                 </ol>
                 <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of them, you can begin to practice and internalize them. Each chapter has activities at the end to help make this easier.</p>
-                <p>The book ends with two sections: "Key Takeaways" which summarizes the high level concepts from each chapter of this book again, and "More Resources" which points you to more ways you can dig into these techniques even more deeply.</p>
                 <div class="text-center">
                     <a class="button-link" href="#buy">Buy Book</a>
                 </div>
@@ -419,24 +437,27 @@
                 <div class="text-center">
                     <h2 class="text-center">Where To Buy</h2>
                 </div>
-                <div class="book-source-column amazon text-left">
-                    <div>
-                        <h3 class="book-medium">Paper Book</h3>
-                        <a class="linky-link" href="#">Amazon</a>
-                        <a class="linky-link" href="#">Local Book Store</a>
-                    </div>
-                    <div>
-                        <h3 class="book-medium">eBook</h3>
-                        <a class="linky-link" href="#">Amazon Kindle</a>
-                        <a class="linky-link" href="#">Local Book Store</a>
-                    </div>
-                        <h3 class="book-medium">Audio Book</h3>
-                        <a class="linky-link" href="#">Audible</a>
-                        <a class="linky-link" href="#">Local Book Store</a>
-                    </div>
+                <div>
+                    <table >
+                        <tr>
+                            <td class="header-column">Paper Book</td>
+                            <td><a class="linky-link" href="#">Local Book Store</a></td>
+                            <td><a class="linky-link" href="#">Amazon</a></td>
+
+                        </tr>
+                        <tr>
+                            <td class="header-column">eBook</td>
+                            <td><a class="linky-link" href="#">Local Book Store</a></td>
+                            <td><a class="linky-link" href="#">Amazon Kindle</a></td>
+                        </tr>
+                        <tr>
+                            <td class="header-column">Audio Book</td>
+                            <td><a class="linky-link" href="#">Local Book Store</a></td>                            
+                            <td><a class="linky-link" href="#">Audible</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-
         </div>
     </body>
 </html>
