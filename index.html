@@ -56,6 +56,10 @@
                 font-family: 'Ostrich Sans', 'Hind', sans-serif;
             }
 
+            blockquote {
+                border-left: 0.2rem solid #CCC;
+                padding-left: 1rem;
+            }
 
             /* header */
 
@@ -121,11 +125,14 @@
                 max-width: 50rem;
                 box-shadow: 3px 3px 10px var(--brain-background-black);
             }
-            .justify-text {
+            .text-justify {
                 text-align: justify;
             }
-            .center-text {
+            .text-center {
                 text-align: center;
+            }
+            .text-right {
+                text-align: right;
             }
             .buy-book-section {
                 text-align: center;
@@ -316,7 +323,7 @@
         </div>
 
         <div class="not-header">
-            <div class="section justify-text">
+            <div class="section text-justify">
                 <h2>The Book</h2>
                 <div class="">
                     <p class="">
@@ -331,8 +338,8 @@
                 </div>
             </div>
 
-            <div class="section justify-text">
-                <div class="center-text">
+            <div class="section text-justify">
+                <div class="text-center">
                     <img src="assets/headshot.jpg" class="headshot">
                 </div>
                 <div>
@@ -353,7 +360,21 @@
                 </div>
             </div>
 
-            <div id="book-overview" class="section justify-text">
+
+            <div class="section text-justify">
+                <h2>What People Say</h2>
+                <div>
+                    <blockquote>
+                        "A straightforward and easily digestible read that decodes several basic, but complex concepts in psychology. It offers an introduction to the elements of thought processing and how to integrate effective behavioral techniques into everyday situations in life. With a little practice, the topics and techniques covered in this book will help train your brain how to deal with any situation effectively and productively. The author's lighthearted and relatable way of writing makes it an enjoyable read."
+                    </blockquote>
+                    <p class="text-right">
+                        ― Dr. Melissa Monsey<br/>
+                        Neuroscience PhD, Yale University
+                    </p>
+                </div>
+            </div>
+
+            <div id="book-overview" class="section text-justify">
                 <h2>Book Overview</h2>
                 <p>Debugging Your Brain brings together two parts of my background: psychology and software development. This book is different from other applied psychology and self-help books in two ways. It concisely covers a wide range of practical techniques backed by psychology research, and it leverages software development metaphors.</p>
                 <p>Debugging Your Brain is written to be read in order, with each chapter building on the last. Each chapter is also written such that you can return to any chapter later as a reference for yourself. Each of the eight chapters covers one major concept:</p>
@@ -369,12 +390,12 @@
                 </ol>
                 <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of them, you can begin to practice and internalize them. Each chapter has activities at the end to help make this easier.</p>
                 <p>The book ends with two sections: "Key Takeaways" which summarizes the high level concepts from each chapter of this book again, and "More Resources" which points you to more ways you can dig into these techniques even more deeply.</p>
-                <div class="center-text">
+                <div class="text-center">
                     <a class="button-link" href="#buy">Buy Book</a>
                 </div>
             </div>
 
-            <div id="buy" class="section center-text">
+            <div id="buy" class="section text-center">
                 <h2>Where To Buy</h2>
                 <div class="book-source-column amazon">
                     <h3>Amazon</h3>
