@@ -1,261 +1,292 @@
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176075365-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
 
-            gtag('config', 'UA-176075365-1');
-        </script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176075365-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-        <link rel="icon" href="/assets/brainimage.jpg" type="image/jpeg">
+        gtag('config', 'UA-176075365-1');
+    </script>
 
-
-        <style>
-            /* general */
-
-            :root {
-                --brain-orange: #d26f53;
-                --brain-pink: #ef75ab;
-                --brain-blue: #648cc9;
-                --brain-purple: #5f4a9e;
-                --brain-background-black: #2d395d;
-                --brain-background-blue: ##020106;
-                --middle-color: var(--brain-blue);
-                --edge-color: var(--brain-purple);
-                --card-background: #f2f3ff;
-                --button-background: purple;
-            }
-
-            @font-face {
-                font-family: 'Mockup';
-                src: url("/assets/Mockup-Regular.otf") format("opentype");
-            }
-
-            @font-face {
-                font-family: "Ostrich Sans";
-                src: url("/assets/OstrichSans-Medium.otf") format("opentype");
-            }
-
-            body {
-                font-family: 'Open Sans', sans-serif;
-                background: var(--brain-blue);
-                background: linear-gradient(-30deg, var(--edge-color) 0%, var(--middle-color) 50%, var(--edge-color) 100%);
-                margin: 0;
-                padding: 0;
-                color: var(--brain-background-black)
-            }
-            html {
-                margin: 0;
-                padding: 0;
-            }
-
-            h1, h2, h3, h4, h5, h6 {
-                font-family: 'Ostrich Sans', 'Hind', sans-serif;
-                letter-spacing: 0.1rem;
-            }
-
-            h2 {
-                font-size: 2em;
-                margin-top: 0.5rem;
-            }
-            h3 {
-                font-size: 1.5em;
-            }
-            .header-column {
-                font-size: 1.5em;
-                display: block;
-                text-align: right;
-                font-family: 'Ostrich Sans', 'Hind', sans-serif;
-            }
-
-            blockquote {
-                border-left: 0.2rem solid #CCC;
-                padding-left: 1rem;
-                margin-top: 3rem;
-            }
-
-            table {
-                margin: auto;
-            }
-
-            td {
-                vertical-align: middle;
-                padding: 1rem;
-            }
-            p {
-                line-height: 1.45em;
-            }
-            /* header */
-
-            .title-section {
-                text-align: center;
-                background: black;
-                padding: 2.5rem;
-            }
-
-            .title-group {
-                margin: 0.2em;
-                font-size: 6em;
-                text-align: left;
-                font-family: "Ostrich Sans", sans-serif;
-                font-weight: black;
-                color: white;
-                letter-spacing: 0.3rem;
-                text-align: center;
-            }
-
-            .title {
-                margin: 0;
-                line-height: 0.9em;
-                font-size: 1em;
-            }
-            .subtitle {
-                font-weight: normal;
-                font-size: 1em;
-                margin: 0;
-                padding: 0;
-                display: block;
-                line-height: 0.9em;
-            }
-            .author {
-                font-weight: normal;
-                font-size: 0.5em;
-            }
-            .release-date {
-                font-weight: normal;
-                font-size: 0.2em;
-            }
+    <link rel="icon" href="/assets/brainimage.jpg" type="image/jpeg">
 
 
-            /* sections */
+    <style>
+        /* general */
 
-            h2 {
-                text-align: center;
-            }
+        :root {
+            --brain-orange: #d26f53;
+            --brain-pink: #ef75ab;
+            --brain-blue: #648cc9;
+            --brain-purple: #5f4a9e;
+            --brain-background-black: #2d395d;
+            --brain-background-blue: ##020106;
+            --middle-color: var(--brain-blue);
+            --edge-color: var(--brain-purple);
+            --card-background: #f2f3ff;
+            --button-background: purple;
+        }
 
-            .not-header {
-                text-align: center;
-                /* padding-top: 1rem; */
-                padding: 1rem;
-            }
+        @font-face {
+            font-family: 'Mockup';
+            src: url("/assets/Mockup-Regular.otf") format("opentype");
+        }
 
-            .section {
-                display: block;
-                /* vertical-align: top; */
-                margin: 1.5rem;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 2rem;
-                background-color: var(--card-background);
-                /* background: rgba(135,142,217,0.9) */
-                border-radius: 1rem;
-                /* min-width: 25rem; */
-                max-width: 50rem;
-                box-shadow: 3px 3px 10px var(--brain-background-black);
-            }
-            .text-justify {
-                text-align: justify;
-            }
-            .text-center {
-                text-align: center;
-            }
-            .text-right {
-                text-align: right;
-            }
-            .buy-book-section {
-                text-align: center;
-            }
-            h3 {
-                text-align: center;
-            }
-            a {
-                color: var(--brain-blue);
-            }
-            a:hover {
-                color: var(--brain-purple);
-            }
+        @font-face {
+            font-family: "Ostrich Sans";
+            src: url("/assets/OstrichSans-Medium.otf") format("opentype");
+        }
 
-            a.linky-link {
-                color: var(--brain-blue);
-                border: 1px solid var(--brain-blue);
-                padding: 0.4rem;
-                margin: 0.2rem;
-                border-radius: 0.5rem;
-                text-decoration: none;
-            }
-            a.linky-link:hover {
-                color: var(--brain-purple);
-                border: 1px solid var(--brain-purple);
-            }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--brain-blue);
+            background: linear-gradient(-30deg, var(--edge-color) 0%, var(--middle-color) 50%, var(--edge-color) 100%);
+            margin: 0;
+            padding: 0;
+            color: var(--brain-background-black)
+        }
 
-            a.button-link {
-                display: inline-block;
-                width: 8rem;
-                padding: 10px;
-                margin: 10px;
-                color: white;
-                box-shadow: 2px 2px var(--brain-purple);
-                text-decoration: none;
-                background-color: var(--brain-orange);
-                background: radial-gradient(17em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
-                border-radius: 6px;
-                text-align: center;
-            }
-            a.button-link:hover {
-                background: radial-gradient(10em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
-            }
+        html {
+            margin: 0;
+            padding: 0;
+        }
 
-            .book-source-column {
-                display: inline-block;
-            }
-            .lol {text-align:center;}
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Ostrich Sans', 'Hind', sans-serif;
+            letter-spacing: 0.1rem;
+        }
 
-            .column {
-                margin-right: 2rem;
-                margin-left: 2rem;
-            }
-            p {
-                font-size: 1em;
-            }
-            .book-floating-box {
-                display: relative;
-                top: 50px;
-            }
-            .headshot {
-                height: 150px;
-                width: 150px;
-                min-height: 150px;
-                min-width: 150px;
-                border-radius: 150px;
-                float:left;
-                margin: 2rem;
-            }
-            .book-medium {
-                display:inline-block;
-                padding-right:2rem;
-            }
-        </style>
-        <style>
-            .book-container {
+        h2 {
+            font-size: 2em;
+            margin-top: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        .header-column {
+            font-size: 1.5em;
+            display: block;
+            text-align: right;
+            font-family: 'Ostrich Sans', 'Hind', sans-serif;
+        }
+
+        blockquote {
+            border-left: 0.2rem solid #CCC;
+            padding-left: 1rem;
+            margin-top: 3rem;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            vertical-align: middle;
+            padding: 1rem;
+        }
+
+        p {
+            line-height: 1.45em;
+        }
+
+        /* header */
+
+        .title-section {
+            text-align: center;
+            background: black;
+            padding: 2.5rem;
+        }
+
+        .title-group {
+            margin: 0.2em;
+            font-size: 6em;
+            text-align: left;
+            font-family: "Ostrich Sans", sans-serif;
+            font-weight: black;
+            color: white;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+
+        .title {
+            margin: 0;
+            line-height: 0.9em;
+            font-size: 1em;
+        }
+
+        .subtitle {
+            font-weight: normal;
+            font-size: 1em;
+            margin: 0;
+            padding: 0;
+            display: block;
+            line-height: 0.9em;
+        }
+
+        .author {
+            font-weight: normal;
+            font-size: 0.5em;
+        }
+
+        .release-date {
+            font-weight: normal;
+            font-size: 0.2em;
+        }
+
+
+        /* sections */
+
+        h2 {
+            text-align: center;
+        }
+
+        .not-header {
+            text-align: center;
+            /* padding-top: 1rem; */
+            padding: 1rem;
+        }
+
+        .section {
+            display: block;
+            /* vertical-align: top; */
+            margin: 1.5rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+            background-color: var(--card-background);
+            /* background: rgba(135,142,217,0.9) */
+            border-radius: 1rem;
+            /* min-width: 25rem; */
+            max-width: 50rem;
+            box-shadow: 3px 3px 10px var(--brain-background-black);
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .buy-book-section {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        a {
+            color: var(--brain-blue);
+        }
+
+        a:hover {
+            color: var(--brain-purple);
+        }
+
+        a.linky-link {
+            color: var(--brain-blue);
+            border: 1px solid var(--brain-blue);
+            padding: 0.4rem;
+            margin: 0.2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+        }
+
+        a.linky-link:hover {
+            color: var(--brain-purple);
+            border: 1px solid var(--brain-purple);
+        }
+
+        a.button-link {
+            display: inline-block;
+            width: 8rem;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            box-shadow: 2px 2px var(--brain-purple);
+            text-decoration: none;
+            background-color: var(--brain-orange);
+            background: radial-gradient(17em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        a.button-link:hover {
+            background: radial-gradient(10em, var(--brain-orange) 0%, var(--brain-pink) 50%, var(--brain-orange) 100%);
+        }
+
+        .book-source-column {
+            display: inline-block;
+        }
+
+        .lol {
+            text-align: center;
+        }
+
+        .column {
+            margin-right: 2rem;
+            margin-left: 2rem;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .book-floating-box {
+            display: relative;
+            top: 50px;
+        }
+
+        .headshot {
+            height: 150px;
+            width: 150px;
+            min-height: 150px;
+            min-width: 150px;
+            border-radius: 150px;
+            float: left;
+            margin: 2rem;
+        }
+
+        .book-medium {
+            display: inline-block;
+            padding-right: 2rem;
+        }
+    </style>
+    <style>
+        .book-container {
             display: flex;
             align-items: center;
             justify-content: center;
             perspective: 600px;
-            }
+        }
 
-            @keyframes initAnimation {
+        @keyframes initAnimation {
             0% {
                 transform: rotateY(-10deg);
             }
+
             100% {
                 transform: rotateY(-30deg);
             }
-            }
+        }
 
-            .book {
+        .book {
             width: 200px;
             height: 320px;
             position: relative;
@@ -263,13 +294,13 @@
             transform: rotateY(-30deg);
             transition: 1s ease;
             animation: 2.5s ease 0s 1 initAnimation;
-            }
+        }
 
-            .book:hover {
+        .book:hover {
             transform: rotateY(-10deg);
-            }
+        }
 
-            .book > :first-child {
+        .book> :first-child {
             position: absolute;
             top: 0;
             left: 0;
@@ -280,9 +311,9 @@
             background-color: #01060f;
             border-radius: 0 1px 1px 0;
             box-shadow: 5px 5px 20px #666;
-            }
+        }
 
-            .book::before {
+        .book::before {
             position: absolute;
             content: ' ';
             background-color: blue;
@@ -291,32 +322,31 @@
             width: 18px;
             height: 320px;
             transform: translateX(190px) rotateY(90deg);
-            background: linear-gradient(90deg, 
-                #fff 0%,
-                #f9f9f9 5%,
-                #fff 10%,
-                #f9f9f9 15%,
-                #fff 20%,
-                #f9f9f9 25%,
-                #fff 30%,
-                #f9f9f9 35%,
-                #fff 40%,
-                #f9f9f9 45%,
-                #fff 50%,
-                #f9f9f9 55%,
-                #fff 60%,
-                #f9f9f9 65%,
-                #fff 70%,
-                #f9f9f9 75%,
-                #fff 80%,
-                #f9f9f9 85%,
-                #fff 90%,
-                #f9f9f9 95%,
-                #fff 100%
-                );
-            }
+            background: linear-gradient(90deg,
+                    #fff 0%,
+                    #f9f9f9 5%,
+                    #fff 10%,
+                    #f9f9f9 15%,
+                    #fff 20%,
+                    #f9f9f9 25%,
+                    #fff 30%,
+                    #f9f9f9 35%,
+                    #fff 40%,
+                    #f9f9f9 45%,
+                    #fff 50%,
+                    #f9f9f9 55%,
+                    #fff 60%,
+                    #f9f9f9 65%,
+                    #fff 70%,
+                    #f9f9f9 75%,
+                    #fff 80%,
+                    #f9f9f9 85%,
+                    #fff 90%,
+                    #f9f9f9 95%,
+                    #fff 100%);
+        }
 
-            .book::after {
+        .book::after {
             position: absolute;
             top: 0;
             left: 0;
@@ -327,178 +357,224 @@
             background-color: #01060f;
             border-radius: 0 1px 1px 0;
             box-shadow: -10px 0 50px 10px #666;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="title-section">
-            <div class="column" style="display:inline-block;">
-                <h1 class="title-group">
-                    <div class="title">Debugging</div>
-                    <div class="subtitle">Your Brain</div>
-                    <div class="author">Casey Watts</div>
-                    <div class="release-date">available Nov 1, 2020</div>
-                </h1>
-                <a class="button-link" href="#book-overview">Preview Book</a>
-                <a class="button-link" href="https://forms.gle/WcgmoaaoYYVVWk4T9">Get Updates</a>
-            </div>
-            <div class="column" style="display:inline-block;">
-                    <a
-                    class="book-container"
-                    href="https://www.debuggingyourbrain.com/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >
-                    <div class="book">
-                        <img
-                        alt="Debugging Your Brain by Casey Watts"
-                        src="assets/DYBCoverRGB@2x.jpg"
-                        />
-                    </div>
-                    </a>
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title-section">
+        <div class="column" style="display:inline-block;">
+            <h1 class="title-group">
+                <div class="title">Debugging</div>
+                <div class="subtitle">Your Brain</div>
+                <div class="author">Casey Watts</div>
+                <div class="release-date">available Nov 1, 2020</div>
+            </h1>
+            <a class="button-link" href="#book-overview">Preview Book</a>
+            <a class="button-link" href="#buy">Buy Book</a>
+        </div>
+        <div class="column" style="display:inline-block;">
+            <a class="book-container" href="https://www.debuggingyourbrain.com/" target="_blank"
+                rel="noreferrer noopener">
+                <div class="book">
+                    <img alt="Debugging Your Brain by Casey Watts" src="assets/DYBCoverRGB@2x.jpg" />
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="not-header">
+        <div class="section text-justify">
+            <h2>The Book</h2>
+            <div class="">
+                <p class="">
+                    The human brain is buggy. Sometimes your mind distorts reality, gets frustrated with shortcomings,
+                    and spirals out of control. With practice, you can debug your brain. Catch those distortions of
+                    reality, transform those frustrations into insight, and short-circuit those downward spirals.
+                </p>
+                <p>
+                    Debugging Your Brain (DYB) is a <b>clear</b> applied psychology book and a <b>concise</b> self-help
+                    book. Whether or not you have a technical background, you will find the software development
+                    analogies approachable and insightful. You will likely reference and re-read DYB many times, each
+                    time discovering new insights.
+                </p>
+                <p>
+                    DYB is full of <b>practical</b> techniques. Each technique is condensed to its core idea,
+                    accompanied by just enough story to make it <b>memorable</b>. Each chapter has activities to help
+                    you put its techniques into practice. The <a href="#book-overview">chapters</a> include: Modeling
+                    The Brain, Cognitive Behavioral Therapy, Introspection, Identifying Inputs, Experience Processing,
+                    Experience Validation, and Cognitive Restructuring.
+                </p>
+                <p>
+                    Your brain is a complex system. Patch the software that runs in your mind.
+                </p>
             </div>
         </div>
 
-        <div class="not-header">
-            <div class="section text-justify">
-                <h2>The Book</h2>
-                <div class="">
-                    <p class="">
-                        The human brain is buggy. Sometimes your mind distorts reality, gets frustrated with shortcomings, and spirals out of control. With practice, you can debug your brain. Catch those distortions of reality, transform those frustrations into insight, and short-circuit those downward spirals.
-                    </p>
-                    <p>
-                        Debugging Your Brain (DYB) is a <b>clear</b> applied psychology book and a <b>concise</b> self-help book. Whether or not you have a technical background, you will find the software development analogies approachable and insightful. You will likely reference and re-read DYB many times, each time discovering new insights.
-                    </p>
-                    <p>
-                        DYB is full of <b>practical</b> techniques. Each technique is condensed to its core idea, accompanied by just enough story to make it <b>memorable</b>. Each chapter has activities to help you put its techniques into practice. The <a href="#book-overview">chapters</a> include: Modeling The Brain, Cognitive Behavioral Therapy, Introspection, Identifying Inputs, Experience Processing, Experience Validation, and Cognitive Restructuring.
-                    </p>
-                    <p>
-                        Your brain is a complex system. Patch the software that runs in your mind.
-                    </p>
-                </div>
+        <div class="section text-justify">
+            <div class="text-center">
+                <img src="assets/headshot.jpg" class="headshot">
             </div>
-
-            <div class="section text-justify">
-                <div class="text-center">
-                    <img src="assets/headshot.jpg" class="headshot">
-                </div>
+            <div>
+                <h2>Casey Watts</h2>
                 <div>
-                    <h2>Casey Watts</h2>
                     <div>
-                        <div>
-                            <p>
-                                This book brings together two parts of Casey's background: <b>psychology and software development</b>. Casey studied neurobiology at Yale University, and he is a co-author on <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Watts+and+Schafe">several neurobiology papers</a>. He has also worked in software development for 10 years, including at <a href="https://blog.heroku.com/authors/casey-watts">Heroku</a>. Casey is an independent author based in Washington, DC.
-                            </p>
-                        </div>
+                        <p>
+                            This book brings together two parts of Casey's background: <b>psychology and software
+                                development</b>. Casey studied neurobiology at Yale University, and he is a co-author on
+                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Watts+and+Schafe">several neurobiology
+                                papers</a>. He has also worked in software development for 10 years, including at <a
+                                href="https://blog.heroku.com/authors/casey-watts">Heroku</a>. Casey is an independent
+                            author based in Washington, DC.
+                        </p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="section text-justify">
-                <h2>What People Say</h2>
-                <div>
-                    <blockquote>
-                        "I am <b>inspired</b> to treat my own anxiety and depression symptoms, in part, using these wonderful techniques. I do tend to downward spiral often, and you have given me some tools to nip those instances in the bud. I expect I'll be referencing this book rather frequently as I begin implementing the techniques."
-                        <footer class="text-right">
-                            ― Louis J. Rinaldi<br/>
-                            MBA, Albertus Magnus College
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        "The content is presented in a way that is both digestible and engaging. I see this book as something to have in <b>my back-pocket</b>."
-                        <footer class="text-right">
-                            ― Adrian Gillem<br/>
-                            Lead Developer, Booz Allen Hamilton
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        "A <b>straightforward and easily digestible</b> read that decodes several basic, but complex concepts in psychology. It offers an introduction to the elements of thought processing and how to integrate effective behavioral techniques into everyday situations in life. With a little practice, the topics and techniques covered in this book will help train your brain how to deal with any situation effectively and productively. The author's <b>lighthearted and relatable</b> way of writing makes it an enjoyable read."
-                        <footer class="text-right">
-                            ― Dr. Melissa Monsey<br/>
-                            Neuroscience PhD, Yale University
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        "I’ve been going to therapy for a while, but sometimes I am not always aware of the 'why' behind the techniques my doctors suggest. This book has helped me understand <b>the 'why'</b>!"
-                        <footer class="text-right">
-                            ― Erin Brown<br/>
-                            Lecturer, University of Miami
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        "It's short enough and the table of contents is so clear that no one will have any trouble going back to review something. It points toward more resources for the folks in the audience who have the capacity to do more. It's got assignments. Like it's REALLY well set up for anyone with basically <b>any amount of time or effort to dedicate</b>, from a little to a lot."
-                        <footer class="text-right">
-                            ― Hope Wilson
-                        </footer>
-                    </blockquote>
-                    <blockquote>
-                        "I am well versed in psychology and have a great deal of experience in clinical settings. I believe this book would be a great asset in <b>client education in a clinical setting</b>. Casey has a gift to make very complex information clear in a manner that everyone can understand and apply."
-                        <footer class="text-right">
-                            ― Joyce Lednum<br/>
-                            RNC, MSN, University of Texas
-                        </footer>
-                    </blockquote>
-                </div>
+        <div class="section text-justify">
+            <h2>What People Say</h2>
+            <div>
+                <blockquote>
+                    "I am <b>inspired</b> to treat my own anxiety and depression symptoms, in part, using these
+                    wonderful techniques. I do tend to downward spiral often, and you have given me some tools to nip
+                    those instances in the bud. I expect I'll be referencing this book rather frequently as I begin
+                    implementing the techniques."
+                    <footer class="text-right">
+                        ― Louis J. Rinaldi<br />
+                        MBA, Albertus Magnus College
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    "The content is presented in a way that is both digestible and engaging. I see this book as
+                    something to have in <b>my back-pocket</b>."
+                    <footer class="text-right">
+                        ― Adrian Gillem<br />
+                        Lead Developer, Booz Allen Hamilton
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    "A <b>straightforward and easily digestible</b> read that decodes several basic, but complex
+                    concepts in psychology. It offers an introduction to the elements of thought processing and how to
+                    integrate effective behavioral techniques into everyday situations in life. With a little practice,
+                    the topics and techniques covered in this book will help train your brain how to deal with any
+                    situation effectively and productively. The author's <b>lighthearted and relatable</b> way of
+                    writing makes it an enjoyable read."
+                    <footer class="text-right">
+                        ― Dr. Melissa Monsey<br />
+                        Neuroscience PhD, Yale University
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    "I’ve been going to therapy for a while, but sometimes I am not always aware of the 'why' behind the
+                    techniques my doctors suggest. This book has helped me understand <b>the 'why'</b>!"
+                    <footer class="text-right">
+                        ― Erin Brown<br />
+                        Lecturer, University of Miami
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    "It's short enough and the table of contents is so clear that no one will have any trouble going
+                    back to review something. It points toward more resources for the folks in the audience who have the
+                    capacity to do more. It's got assignments. Like it's REALLY well set up for anyone with basically
+                    <b>any amount of time or effort to dedicate</b>, from a little to a lot."
+                    <footer class="text-right">
+                        ― Hope Wilson
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    "I am well versed in psychology and have a great deal of experience in clinical settings. I believe
+                    this book would be a great asset in <b>client education in a clinical setting</b>. Casey has a gift
+                    to make very complex information clear in a manner that everyone can understand and apply."
+                    <footer class="text-right">
+                        ― Joyce Lednum<br />
+                        RNC, MSN, University of Texas
+                    </footer>
+                </blockquote>
             </div>
+        </div>
 
-            <div id="book-overview" class="section text-justify">
-                <h2>Book Overview</h2>
-                <p>Debugging Your Brain is written to be read in order, with each chapter building on the last. Each chapter is written such that you can return to any chapter later as a reference for yourself. Each of the eight chapters covers one major concept:</p>
-                <ol>
-                    <li><b>Introduction</b> describes an overview of the book and describes several example scenarios to keep in mind while reading the book.</li>
-                    <li><b>Modeling the Brain</b> introduces a discrete mental model of how your mind works, especially around thoughts and emotions.</li>
-                    <li><b>Cognitive Behavioral Therapy</b> (CBT) introduces the principles of this most commonly used talk therapy.</li>
-                    <li><b>Introspection</b> covers how to get into a mental state to effectively work with your thoughts and feelings.</li>
-                    <li><b>Identifying Inputs</b> describes several specific types of inputs to your brain.</li>
-                    <li><b>Experience Processing</b> covers principles and techniques you can use to more deeply understand your experiences.</li>
-                    <li><b>Experience Validation</b> covers techniques you can use to help someone feel like their experiences are valid and understandable, which is critical to dealing with them effectively.</li>
-                    <li><b>Cognitive Restructuring</b> covers the most common unhelpful thought patterns, and how to counter them. This is the core idea of CBT.</li>
-                </ol>
-                <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of them, you can begin to practice and internalize them. Each chapter has activities at the end to help make this easier.</p>
-                <div class="text-center">
-                    <a class="button-link" href="https://forms.gle/WcgmoaaoYYVVWk4T9">Get Updates</a>
-                </div>
+        <div id="book-overview" class="section text-justify">
+            <h2>Book Overview</h2>
+            <p>Debugging Your Brain is written to be read in order, with each chapter building on the last. Each chapter
+                is written such that you can return to any chapter later as a reference for yourself. Each of the eight
+                chapters covers one major concept:</p>
+            <ol>
+                <li><b>Introduction</b> describes an overview of the book and describes several example scenarios to
+                    keep in mind while reading the book.</li>
+                <li><b>Modeling the Brain</b> introduces a discrete mental model of how your mind works, especially
+                    around thoughts and emotions.</li>
+                <li><b>Cognitive Behavioral Therapy</b> (CBT) introduces the principles of this most commonly used talk
+                    therapy.</li>
+                <li><b>Introspection</b> covers how to get into a mental state to effectively work with your thoughts
+                    and feelings.</li>
+                <li><b>Identifying Inputs</b> describes several specific types of inputs to your brain.</li>
+                <li><b>Experience Processing</b> covers principles and techniques you can use to more deeply understand
+                    your experiences.</li>
+                <li><b>Experience Validation</b> covers techniques you can use to help someone feel like their
+                    experiences are valid and understandable, which is critical to dealing with them effectively.</li>
+                <li><b>Cognitive Restructuring</b> covers the most common unhelpful thought patterns, and how to counter
+                    them. This is the core idea of CBT.</li>
+            </ol>
+            <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of them,
+                you can begin to practice and internalize them. Each chapter has activities at the end to help make this
+                easier.</p>
+            <div class="text-center">
+                <a class="button-link" href="#buy">Buy Book</a>
             </div>
+        </div>
 
-            <div id="buy" class="section text-justify">
-                <div class="text-center">
-                    <h2 class="text-center">Where To Buy</h2>
-                </div>
-                <p>
-                    This book will be available for purchase November 1, 2020, with pre-orders available sometime before that.
-                </p>
-                <p class="text-center">
+        <div id="buy" class="section text-justify">
+            <div class="text-center">
+                <h2 class="text-center">Where To Buy</h2>
+            </div>
+            <p>
+                This book will be available for purchase November 1, 2020, with pre-orders available sometime before
+                that. The book is propagating through more stores all the time. Check your favorite book retailer to see
+                if it's there.
+            </p>
+            <!-- <p class="text-center">
                     Want to hear about it?
                 </p>
                 <div class="text-center">
                     <a href="https://forms.gle/WcgmoaaoYYVVWk4T9" class="button-link">Get Updates</a>
-                </div>
-                <div>
-                    <!-- <table >
-                        <tr>
-                            <td class="header-column">Paper Book</td>
-                            <td><a class="linky-link" href="#">Local Book Store</a></td>
-                            <td><a class="linky-link" href="#">Amazon</a></td>
+                </div> -->
+            <div>
+                <table>
+                    <tr>
+                        <td class="header-column">Paper Book</td>
+                        <td><a class="linky-link" href="https://bookshop.org/a/15224/9780578755038">Indiebound</a></td>
+                        <td><a class="linky-link" href="https://www.amazon.com/gp/product/0578755033">Amazon</a></td>
+                        <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td> -->
+                        <!-- <td><a class="linky-link" href="#">Amazon</a></td> -->
 
-                        </tr>
-                        <tr>
-                            <td class="header-column">eBook</td>
-                            <td><a class="linky-link" href="#">Local Book Store</a></td>
-                            <td><a class="linky-link" href="#">Amazon Kindle</a></td>
-                        </tr>
-                        <tr>
-                            <td class="header-column">Audio Book</td>
-                            <td><a class="linky-link" href="#">Local Book Store</a></td>                            
-                            <td><a class="linky-link" href="#">Audible</a></td>
-                        </tr>
-                    </table> -->
-                </div>
-            </div>
-            <div class="section">
-                <h2>Contact Casey</h2>
-                <p>Questions? Want to share your experiences? Reach out to Casey:</p>
-                <a class="linky-link" href="https://twitter.com/kyloma">Twitter</a>
+                    </tr>
+                    <tr>
+                        <td class="header-column">eBook</td>
+                        <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td> -->
+                        <!-- <td><a class="linky-link" href="#">Amazon Kindle</a></td> -->
+                        <td><a class="linky-link"
+                                href="https://www.booktopia.com.au/debugging-your-brain-casey-s-watts/ebook/9780578755045.html">Booktopia
+                                (AU)</a></td>
+                        <td><a class="linky-link"
+                                href="https://www.barnesandnoble.com/w/debugging-your-brain-casey-s-watts/1137594613">Nook</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="header-column">Audio Book</td>
+                        <td>still being processed</td>
+                        <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td>                             -->
+                        <!-- <td><a class="linky-link" href="#">Audible</a></td> -->
+                    </tr>
+                </table>
             </div>
         </div>
-    </body>
+        <div class="section">
+            <h2>Contact Casey</h2>
+            <p>Questions? Want to share your experiences? Reach out to Casey:</p>
+            <a class="linky-link" href="https://twitter.com/kyloma">Twitter</a>
+        </div>
+    </div>
+</body>
+
 </html>
