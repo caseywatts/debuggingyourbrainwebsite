@@ -37,6 +37,7 @@
             --edge-color: var(--brain-purple);
             --card-background: #f2f3ff;
             --button-background: purple;
+            --pale-blue: hsl(216 48% 95% / 1);
         }
 
         @font-face {
@@ -286,6 +287,53 @@
             display: inline-block;
             padding-right: 2rem;
         }
+
+        .content {
+            margin-top: 2.8rem;
+        }
+
+        .navbar {
+            height: 4rem;
+            text-align: right;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--brain-background-blue);
+            z-index: 100;
+            background-color: white;
+            box-sizing: border-box;
+            box-shadow: 0.3rem 0.1rem 0.3rem var(--brain-background-black);
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar a {
+            text-align: center;
+            height: 100%;
+            padding: 1.2rem 0.6rem;
+            margin-left: 0.3rem;
+            margin-right: 0.3rem;
+            display: block;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: var(--pale-blue);
+        }
+
+        .title-link {
+            color: var(--brain-background-black);
+        }
     </style>
     <style>
         .book-container {
@@ -381,228 +429,267 @@
 </head>
 
 <body>
-    <div class="title-section">
-        <div class="column" style="display:inline-block;">
-            <h1 class="title-group">
-                <div class="title">Debugging</div>
-                <div class="subtitle">Your Brain</div>
-                <div class="author">Casey Watts</div>
-                <div class="release-date">Now Available</div>
-            </h1>
-            <a class="button-link" href="#book-overview">Preview Book</a>
-            <a class="button-link" href="#buy">Buy Book</a>
-        </div>
-        <div class="column" style="display:inline-block;">
-            <a class="book-container" href="https://www.debuggingyourbrain.com/" target="_blank"
-                rel="noreferrer noopener">
-                <div class="book">
-                    <img alt="Debugging Your Brain by Casey Watts" src="assets/DYBCoverRGB@2x.jpg" />
-                </div>
-            </a>
-        </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="#" class="title-link">Debugging Your Brain</a></li>
+            <li><a href="#testimonials">What People Say</a></li>
+            <li><a href="#book-overview">Book Overview</a></li>
+            <!-- <li><a href="#resources">Resources</a></li> -->
+            <li><a href="#buy" class="">Where To Buy</a></li>
+            <!-- <li><a href="#buy" class="navbar-item-right">Buy Book</a></li> -->
+        </ul>
     </div>
-
-    <div class="not-header">
-        <div class="section text-justify">
-            <h2>The Book</h2>
-            <div class="">
-                <p class="">
-                    The human brain is buggy. Sometimes your mind distorts reality, gets frustrated with shortcomings,
-                    and spirals out of control. With practice, you can debug your brain. Catch those distortions of
-                    reality, transform those frustrations into insight, and short-circuit those downward spirals.
-                </p>
-                <p>
-                    Debugging Your Brain (DYB) is a <b>clear</b> applied psychology book and a <b>concise</b> self-help
-                    book. Whether or not you have a technical background, you will find the software development
-                    analogies approachable and insightful. You will likely reference and re-read DYB many times, each
-                    time discovering new insights.
-                </p>
-                <p>
-                    DYB is full of <b>practical</b> techniques. Each technique is condensed to its core idea,
-                    accompanied by just enough story to make it <b>memorable</b>. Each chapter has activities to help
-                    you put its techniques into practice. The <a href="#book-overview">chapters</a> include: Modeling
-                    The Brain, Cognitive Behavioral Therapy, Introspection, Identifying Inputs, Experience Processing,
-                    Experience Validation, and Cognitive Restructuring.
-                </p>
-                <p>
-                    Your brain is a complex system. Patch the software that runs in your mind.
-                </p>
+    <div class="content">
+        <div class="title-section">
+            <div class="column" style="display:inline-block;">
+                <h1 class="title-group">
+                    <div class="title">Debugging</div>
+                    <div class="subtitle">Your Brain</div>
+                    <div class="author">Casey Watts</div>
+                    <div class="release-date">Now Available</div>
+                </h1>
+                <a class="button-link" href="#book-overview">Preview Book</a>
+                <a class="button-link" href="#buy">Buy Book</a>
+            </div>
+            <div class="column" style="display:inline-block;">
+                <a class="book-container" href="https://www.debuggingyourbrain.com/" target="_blank"
+                    rel="noreferrer noopener">
+                    <div class="book">
+                        <img alt="Debugging Your Brain by Casey Watts" src="assets/DYBCoverRGB@2x.jpg" />
+                    </div>
+                </a>
             </div>
         </div>
 
-        <div class="section text-justify">
-            <div class="text-center">
-                <img src="assets/headshot.jpg" class="headshot">
+        <div class="not-header">
+            <div class="section text-justify">
+                <h2>The Book</h2>
+                <div class="">
+                    <p class="">
+                        The human brain is buggy. Sometimes your mind distorts reality, gets frustrated with
+                        shortcomings,
+                        and spirals out of control. With practice, you can debug your brain. Catch those distortions of
+                        reality, transform those frustrations into insight, and short-circuit those downward spirals.
+                    </p>
+                    <p>
+                        Debugging Your Brain (DYB) is a <b>clear</b> applied psychology book and a <b>concise</b>
+                        self-help
+                        book. Whether or not you have a technical background, you will find the software development
+                        analogies approachable and insightful. You will likely reference and re-read DYB many times,
+                        each
+                        time discovering new insights.
+                    </p>
+                    <p>
+                        DYB is full of <b>practical</b> techniques. Each technique is condensed to its core idea,
+                        accompanied by just enough story to make it <b>memorable</b>. Each chapter has activities to
+                        help
+                        you put its techniques into practice. The <a href="#book-overview">chapters</a> include:
+                        Modeling
+                        The Brain, Cognitive Behavioral Therapy, Introspection, Identifying Inputs, Experience
+                        Processing,
+                        Experience Validation, and Cognitive Restructuring.
+                    </p>
+                    <p>
+                        Your brain is a complex system. Patch the software that runs in your mind.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>Casey Watts</h2>
+
+            <div class="section text-justify">
+                <div class="text-center">
+                    <img src="assets/headshot.jpg" class="headshot">
+                </div>
                 <div>
+                    <h2>Casey Watts</h2>
                     <div>
-                        <p>
-                            This book brings together two parts of Casey's background: <b>psychology and software
-                                development</b>. Casey studied neurobiology at Yale University, and he is a co-author on
-                            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Watts+and+Schafe">several neurobiology
-                                papers</a>. He has also worked in software development for 10 years, including at <a
-                                href="https://blog.heroku.com/authors/casey-watts">Heroku</a>. Casey is an independent
-                            author based in Washington, DC.
-                        </p>
+                        <div>
+                            <p>
+                                This book brings together two parts of Casey's background: <b>psychology and software
+                                    development</b>. Casey studied neurobiology at Yale University, and he is a
+                                co-author on
+                                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=Watts+and+Schafe">several neurobiology
+                                    papers</a>. He has also worked in software development for 10 years, including at <a
+                                    href="https://blog.heroku.com/authors/casey-watts">Heroku</a>. Casey is an
+                                independent
+                                author based in Washington, DC.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="section text-justify">
-            <h2>What People Say</h2>
-            <div>
-                <blockquote>
-                    "I am <b>inspired</b> to treat my own anxiety and depression symptoms, in part, using these
-                    wonderful techniques. I do tend to downward spiral often, and you have given me some tools to nip
-                    those instances in the bud. I expect I'll be referencing this book rather frequently as I begin
-                    implementing the techniques."
-                    <footer class="text-right">
-                        ― Louis J. Rinaldi<br />
-                        MBA, Albertus Magnus College
-                    </footer>
-                </blockquote>
-                <blockquote>
-                    "The content is presented in a way that is both digestible and engaging. I see this book as
-                    something to have in <b>my back-pocket</b>."
-                    <footer class="text-right">
-                        ― Adrian Gillem<br />
-                        Lead Developer, Booz Allen Hamilton
-                    </footer>
-                </blockquote>
-                <blockquote>
-                    "A <b>straightforward and easily digestible</b> read that decodes several basic, but complex
-                    concepts in psychology. It offers an introduction to the elements of thought processing and how to
-                    integrate effective behavioral techniques into everyday situations in life. With a little practice,
-                    the topics and techniques covered in this book will help train your brain how to deal with any
-                    situation effectively and productively. The author's <b>lighthearted and relatable</b> way of
-                    writing makes it an enjoyable read."
-                    <footer class="text-right">
-                        ― Dr. Melissa Monsey<br />
-                        Neuroscience PhD, Yale University
-                    </footer>
-                </blockquote>
-                <blockquote>
-                    "I’ve been going to therapy for a while, but sometimes I am not always aware of the 'why' behind the
-                    techniques my doctors suggest. This book has helped me understand <b>the 'why'</b>!"
-                    <footer class="text-right">
-                        ― Erin Brown<br />
-                        Lecturer, University of Miami
-                    </footer>
-                </blockquote>
-                <blockquote>
-                    "It's short enough and the table of contents is so clear that no one will have any trouble going
-                    back to review something. It points toward more resources for the folks in the audience who have the
-                    capacity to do more. It's got assignments. Like it's REALLY well set up for anyone with basically
-                    <b>any amount of time or effort to dedicate</b>, from a little to a lot."
-                    <footer class="text-right">
-                        ― Hope Wilson
-                    </footer>
-                </blockquote>
-                <blockquote>
-                    "I am well versed in psychology and have a great deal of experience in clinical settings. I believe
-                    this book would be a great asset in <b>client education in a clinical setting</b>. Casey has a gift
-                    to make very complex information clear in a manner that everyone can understand and apply."
-                    <footer class="text-right">
-                        ― Joyce Lednum<br />
-                        RNC, MSN, University of Texas
-                    </footer>
-                </blockquote>
+            <div class="section text-justify" id="testimonials">
+                <h2>What People Say</h2>
+                <div>
+                    <blockquote>
+                        "I am <b>inspired</b> to treat my own anxiety and depression symptoms, in part, using these
+                        wonderful techniques. I do tend to downward spiral often, and you have given me some tools to
+                        nip
+                        those instances in the bud. I expect I'll be referencing this book rather frequently as I begin
+                        implementing the techniques."
+                        <footer class="text-right">
+                            ― Louis J. Rinaldi<br />
+                            MBA, Albertus Magnus College
+                        </footer>
+                    </blockquote>
+                    <blockquote>
+                        "The content is presented in a way that is both digestible and engaging. I see this book as
+                        something to have in <b>my back-pocket</b>."
+                        <footer class="text-right">
+                            ― Adrian Gillem<br />
+                            Lead Developer, Booz Allen Hamilton
+                        </footer>
+                    </blockquote>
+                    <blockquote>
+                        "A <b>straightforward and easily digestible</b> read that decodes several basic, but complex
+                        concepts in psychology. It offers an introduction to the elements of thought processing and how
+                        to
+                        integrate effective behavioral techniques into everyday situations in life. With a little
+                        practice,
+                        the topics and techniques covered in this book will help train your brain how to deal with any
+                        situation effectively and productively. The author's <b>lighthearted and relatable</b> way of
+                        writing makes it an enjoyable read."
+                        <footer class="text-right">
+                            ― Dr. Melissa Monsey<br />
+                            Neuroscience PhD, Yale University
+                        </footer>
+                    </blockquote>
+                    <blockquote>
+                        "I’ve been going to therapy for a while, but sometimes I am not always aware of the 'why' behind
+                        the
+                        techniques my doctors suggest. This book has helped me understand <b>the 'why'</b>!"
+                        <footer class="text-right">
+                            ― Erin Brown<br />
+                            Lecturer, University of Miami
+                        </footer>
+                    </blockquote>
+                    <blockquote>
+                        "It's short enough and the table of contents is so clear that no one will have any trouble going
+                        back to review something. It points toward more resources for the folks in the audience who have
+                        the
+                        capacity to do more. It's got assignments. Like it's REALLY well set up for anyone with
+                        basically
+                        <b>any amount of time or effort to dedicate</b>, from a little to a lot."
+                        <footer class="text-right">
+                            ― Hope Wilson
+                        </footer>
+                    </blockquote>
+                    <blockquote>
+                        "I am well versed in psychology and have a great deal of experience in clinical settings. I
+                        believe
+                        this book would be a great asset in <b>client education in a clinical setting</b>. Casey has a
+                        gift
+                        to make very complex information clear in a manner that everyone can understand and apply."
+                        <footer class="text-right">
+                            ― Joyce Lednum<br />
+                            RNC, MSN, University of Texas
+                        </footer>
+                    </blockquote>
+                </div>
             </div>
-        </div>
 
-        <div id="book-overview" class="section text-justify">
-            <h2>Book Overview</h2>
-            <p>Debugging Your Brain is written to be read in order, with each chapter building on the last. Each chapter
-                is written such that you can return to any chapter later as a reference for yourself. Each of the eight
-                chapters covers one major concept:</p>
-            <ol>
-                <li><b>Introduction</b> describes an overview of the book and describes several example scenarios to
-                    keep in mind while reading the book.</li>
-                <li><b>Modeling the Brain</b> introduces a discrete mental model of how your mind works, especially
-                    around thoughts and emotions.</li>
-                <li><b>Cognitive Behavioral Therapy</b> (CBT) introduces the principles of this most commonly used talk
-                    therapy.</li>
-                <li><b>Introspection</b> covers how to get into a mental state to effectively work with your thoughts
-                    and feelings.</li>
-                <li><b>Identifying Inputs</b> describes several specific types of inputs to your brain.</li>
-                <li><b>Experience Processing</b> covers principles and techniques you can use to more deeply understand
-                    your experiences.</li>
-                <li><b>Experience Validation</b> covers techniques you can use to help someone feel like their
-                    experiences are valid and understandable, which is critical to dealing with them effectively.</li>
-                <li><b>Cognitive Restructuring</b> covers the most common unhelpful thought patterns, and how to counter
-                    them. This is the core idea of CBT.</li>
-            </ol>
-            <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of them,
-                you can begin to practice and internalize them. Each chapter has activities at the end to help make this
-                easier.</p>
-            <div class="text-center">
-                <a class="button-link" href="#buy">Buy Book</a>
+            <div id="book-overview" class="section text-justify">
+                <h2>Book Overview</h2>
+                <p>Debugging Your Brain is written to be read in order, with each chapter building on the last. Each
+                    chapter
+                    is written such that you can return to any chapter later as a reference for yourself. Each of the
+                    eight
+                    chapters covers one major concept:</p>
+                <ol>
+                    <li><b>Introduction</b> describes an overview of the book and describes several example scenarios to
+                        keep in mind while reading the book.</li>
+                    <li><b>Modeling the Brain</b> introduces a discrete mental model of how your mind works, especially
+                        around thoughts and emotions.</li>
+                    <li><b>Cognitive Behavioral Therapy</b> (CBT) introduces the principles of this most commonly used
+                        talk
+                        therapy.</li>
+                    <li><b>Introspection</b> covers how to get into a mental state to effectively work with your
+                        thoughts
+                        and feelings.</li>
+                    <li><b>Identifying Inputs</b> describes several specific types of inputs to your brain.</li>
+                    <li><b>Experience Processing</b> covers principles and techniques you can use to more deeply
+                        understand
+                        your experiences.</li>
+                    <li><b>Experience Validation</b> covers techniques you can use to help someone feel like their
+                        experiences are valid and understandable, which is critical to dealing with them effectively.
+                    </li>
+                    <li><b>Cognitive Restructuring</b> covers the most common unhelpful thought patterns, and how to
+                        counter
+                        them. This is the core idea of CBT.</li>
+                </ol>
+                <p>You will learn the most if you can integrate these concepts into your life. Once you are aware of
+                    them,
+                    you can begin to practice and internalize them. Each chapter has activities at the end to help make
+                    this
+                    easier.</p>
+                <div class="text-center">
+                    <a class="button-link" href="#buy">Buy Book</a>
+                </div>
             </div>
-        </div>
 
-        <div id="buy" class="section text-justify">
-            <div class="text-center">
-                <h2 class="text-center">Where To Buy</h2>
-            </div>
-            <p>
-                The book is propagating through more stores all the time. Check your favorite book retailer to see
-                if it's there.
-            </p>
-            <!-- <p class="text-center">
+            <div id="buy" class="section text-justify">
+                <div class="text-center">
+                    <h2 class="text-center">Where To Buy</h2>
+                </div>
+                <p>
+                    The book is propagating through more stores all the time. Check your favorite book retailer to see
+                    if it's there.
+                </p>
+                <!-- <p class="text-center">
                     Want to hear about it?
                 </p>
                 <div class="text-center">
                     <a href="https://forms.gle/WcgmoaaoYYVVWk4T9" class="button-link">Get Updates</a>
                 </div> -->
-            <div>
-                <table>
-                    <tr>
-                        <td class="header-column">Paper Book</td>
-                        <td><a class="linky-link" href="https://bookshop.org/a/15224/9780578755038">Bookshop (Indie)</a>
-                        </td>
-                        <td><a class="linky-link" href="https://www.amazon.com/gp/product/0578755033">Amazon</a></td>
-                        <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td> -->
-                        <!-- <td><a class="linky-link" href="#">Amazon</a></td> -->
+                <div>
+                    <table>
+                        <tr>
+                            <td class="header-column">Paper Book</td>
+                            <td><a class="linky-link" href="https://bookshop.org/a/15224/9780578755038">Bookshop
+                                    (Indie)</a>
+                            </td>
+                            <td><a class="linky-link" href="https://www.amazon.com/gp/product/0578755033">Amazon</a>
+                            </td>
+                            <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td> -->
+                            <!-- <td><a class="linky-link" href="#">Amazon</a></td> -->
 
-                    </tr>
-                    <tr>
-                        <td class="header-column">eBook</td>
-                        <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td> -->
-                        <!-- <td><a class="linky-link" href="#">Amazon Kindle</a></td> -->
-                        <!-- <td><a class="linky-link"
+                        </tr>
+                        <tr>
+                            <td class="header-column">eBook</td>
+                            <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td> -->
+                            <!-- <td><a class="linky-link" href="#">Amazon Kindle</a></td> -->
+                            <!-- <td><a class="linky-link"
                                 href="https://www.booktopia.com.au/debugging-your-brain-casey-s-watts/ebook/9780578755045.html">Booktopia
                                 (AU)</a></td> -->
-                        <td><a class="linky-link"
-                                href="https://www.barnesandnoble.com/w/debugging-your-brain-casey-s-watts/1137594613">Nook
-                                app</a>
-                        </td>
-                        <td></td>
-                        <td>Amazon Kindle pending</td>
-                    </tr>
-                    <tr>
-                        <td class="header-column">Audio Book</td>
-                        <td><a class="linky-link"
-                                href="https://play.google.com/store/audiobooks/details/Casey_Watts_Debugging_Your_Brain?id=AQAAAECcVQEVjM&hl=en&gl=US">Google
-                                Play Books</a></td>
-                        <td><a class="linky-link"
-                                href="https://www.chirpbooks.com/audiobooks/debugging-your-brain-by-casey-watts">Chirp</a>
-                        </td>
-                        <td>Audible pending</td>
-                        <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td>                             -->
-                        <!-- <td><a class="linky-link" href="#">Audible</a></td> -->
+                            <td><a class="linky-link"
+                                    href="https://www.barnesandnoble.com/w/debugging-your-brain-casey-s-watts/1137594613">Nook
+                                    app</a>
+                            </td>
+                            <td></td>
+                            <td>Amazon Kindle pending</td>
+                        </tr>
+                        <tr>
+                            <td class="header-column">Audio Book</td>
+                            <td><a class="linky-link"
+                                    href="https://play.google.com/store/audiobooks/details/Casey_Watts_Debugging_Your_Brain?id=AQAAAECcVQEVjM&hl=en&gl=US">Google
+                                    Play Books</a></td>
+                            <td><a class="linky-link"
+                                    href="https://www.chirpbooks.com/audiobooks/debugging-your-brain-by-casey-watts">Chirp</a>
+                            </td>
+                            <td>Audible pending</td>
+                            <!-- <td><a class="linky-link" href="https://www.indiebound.org/book/9780578755038">Local Book Store</a></td>                             -->
+                            <!-- <td><a class="linky-link" href="#">Audible</a></td> -->
 
 
-                    </tr>
-                </table>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="section">
-            <h2>Contact Casey</h2>
-            <p>Questions? Want to share your experiences? Reach out to Casey:</p>
-            <a class="linky-link" href="https://twitter.com/kyloma">Twitter</a>
+            <div class="section">
+                <h2>Contact Casey</h2>
+                <p>Questions? Want to share your experiences? Reach out to Casey:</p>
+                <a class="linky-link" href="https://twitter.com/kyloma">Twitter</a>
+            </div>
         </div>
     </div>
 </body>
